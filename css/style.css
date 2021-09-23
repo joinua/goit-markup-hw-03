@@ -73,7 +73,7 @@ header .container {
   color: #fff;
 }
 
-.link {
+.page {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -83,22 +83,22 @@ header .container {
   padding: 32px 0;
 }
 
-.site-nav .link {
+.site-nav .page {
   margin-right: 50px;
   text-transform: capitalize;
 }
 
-.site-nav .link.current {
+.site-nav .page.current {
   color: #2196f3;
 }
 
-.contacts .link {
+.contacts .page {
   margin-left: 50px;
   color: var(--secon-color);
 }
 
-.link:hover,
-.link:focus {
+.page:hover,
+.page:focus {
   color: #2196f3;
 }
 
@@ -285,7 +285,7 @@ header .container {
   margin-right: 8px;
 }
 
-.portfolio-btn {
+.button {
   font-family: inherit;
   padding: 6px 22px;
   text-transform: capitalize;
@@ -306,9 +306,38 @@ header .container {
   color: white;
 }
 
-.portfolio-img {
-  width: 370px;
+.projects {
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.projects .list-item {
+  max-width: calc((100% - 60px) / 3);
+}
+
+.projects .list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects .list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.projects .link {
+  color: inherit;
+}
+
+.img {
+  display: block;
   height: 294px;
+}
+
+.content {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-title {
@@ -326,12 +355,4 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: capitalize;
   color: var(--secon-color);
-}
-
-.portfolio-list-card {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  display: inline;
-  padding: 30px;
 }
