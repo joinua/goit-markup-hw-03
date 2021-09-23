@@ -240,6 +240,10 @@ header .container {
   margin-bottom: 9px;
 }
 
+.footer-list:last-child {
+  margin-bottom: 0px;
+}
+
 .footer-mail {
   font-size: 14px;
   line-height: 1.71;
@@ -255,11 +259,13 @@ header .container {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-footer {
-  /* padding-bottom: 60px; */
-}
-
 /* портфолио */
+
+.section {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .list-btn {
   display: flex;
@@ -267,9 +273,16 @@ header .container {
   margin-top: 94px;
 }
 
-.list-btn-port {
+.list {
   justify-content: center;
-  display: flex;
+}
+
+.filter {
+  margin-bottom: 50px;
+}
+
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -287,8 +300,8 @@ header .container {
   cursor: pointer;
 }
 
-.list-btn .select:hover,
-.list-btn .select:focus {
+.item .select:hover,
+.item .select:focus {
   background: #2196f3;
   color: white;
 }
